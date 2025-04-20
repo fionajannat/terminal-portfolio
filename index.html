@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atique Ahmed Ziad | Hacker Terminal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="login-screen" id="login-screen">
+        <div class="login-box">
+            <p class="login-line">
+                <span class="prompt">user:</span> <span class="fake-input" id="login-text"></span></p>
+            <p class="login-line"><span class="prompt">password:</span> <span class="fake-input" id="password-text"></span></p>
+            <p class="login-msg" id="access-text"></p>
+        </div>
+    </div>
+
+  <div class="terminal" style="display: none;">
+    <div class="terminal-header"> 
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">ziad@portfolio:~$</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <p><span class="prompt">ziad@portfolio:</span>
+        <span class="path">~</span>$ 
+        <span id="typed-text"></span>
+        <span class="cursor">|</span></p>
+
+      <div id="main-content" style="display: none;">
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">$ cd about &&  about.txt</span>
+        </p>
+        <!-- <p>📌 Senior Full Stack Engineer with 8+ years of experience in building large-scale web apps, Shopify apps, browser extensions, and Android apps. Leading engineering at Cefalo & House of Math.</p> -->
+         
+        <p>📌 Senior Full Stack Engineer with 8+ years of experience in building large-scale web applications, Shopify apps, browser extensions, and Android apps. Currently leading an engineering team at Cefalo & House of Math, optimizing workflows and mentoring developers. Successfully led projects that boosted retention (60%) and reduced drop-off rates (40%). Former Google Summer of Code 2020 developer at Mozilla. Enthusiastic about software engineering research, particularly in scalability, performance optimization, and developer productivity.</p>
+        
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">$ cd skills</span></p>
+        <div class="grid">
+          <span>▸ JavaScript</span> <span>▸ Java</span> <span>▸ React</span>
+          <span>▸ Next.js</span> <span>▸ Redux</span> <span>▸ Node.js</span>
+          <span>▸ Express</span> <span>▸ Koa</span> <span>▸ SQL</span>
+          <span>▸ NoSQL</span> <span>▸ Jest</span> <span>▸ Playwright</span>
+          <span>▸ Shopify API</span> <span>▸ Web API</span> <span>▸ GraphQL</span>
+          <span>▸ Git</span> <span>▸ Mercurial</span> <span>▸ Firebase</span>
+          <span>▸ Sanity</span> <span>▸ Docker</span> <span>▸ GCP</span>
+        </div>
+
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">>$ cd community experience && works</span>
+        </p>
+        <p>👨🏻‍💻 <span class="company">Cefalo / House of Math</span> — Senior Software Engineer(Full Stack) | Team Lead<br>
+            <span class="work-date">Jun 2023 – Current</span> <br>
+        <!-- → Led engineering team, boosted retention by 60%, cut GitHub costs by 27% -->
+        →	Leading the House of Math (houseofmath.com) Dhaka team.<br>
+        →	Guiding architecture, strategize, and support the team to deliver efficient solutions.<br>
+        →	Led the development of “Curriculum” feature, resulting 60% increase in subscriber retention rate.<br>
+        →   Enhanced website performance by reducing re-renders, optimizing API calls, and minimizing memory usage.<br>
+        →	Improved API response times by optimizing database queries and implementing necessary caching.<br>
+        →	Mentoring junior engineers to write readable, maintainable and high-quality code.<br>
+        →	<strong>Tech stack</strong>: Next.js, Redux, Tailwind, Node.js, Express, Sanity, Redis, PostgresSQL, Firebase, Playwright, etc.
+
+        </p>
+        <br>
+
+        <p>👨🏻‍💻 <span class="company">Cefalo</span> — Senior Software Engineer(Full Stack)<br>
+            <span class="work-date">Jan 2022-May 2023</span> <br>
+        
+        →	Led the development of “Customer Onboarding” feature, achieving a 40% reduction in drop-off rates.<br>
+        →	Collaborated in the development of “Statistics” panel, boosting participation in math activities by 30%.<br>
+        →	Collaborated in the development of “Math Vault” project, achieving a 25% increase in user engagement.<br>
+        →   Developed & integrated multiple backend APIs and efficiently managed the cache in frontend and backend.<br>
+        →	Implemented optimistic update in several UIs that made user interactions 3 times faster.<br>
+        →	<strong>Tech stack</strong>: Next.js, Redux, Tailwind, Node.js, Express, Sanity, Redis, PostgresSQL, Firebase, Playwright, etc.
+
+        </p>
+        <br>
+
+        <p>👨🏻‍💻 <span class="company">Vanilla Agency LLC</span> — Full Stack Engineer<br>
+            <span class="work-date">Nov 2020 – Sept 2021</span> <br>
+            →	Developed 6 Shopify Apps from scratch that are being used by 500+ Shopify stores.<br>
+            →	Developed theme components/UI for Shopify stores as per client’s requirement.<br>
+            →	<strong>Tech stack</strong>: React.js, Vanilla JS, MongoDB, Koa, Shopify APIs, Gulp, Web APIs, etc.
+        
+    </p>
+    <br>
+
+        <p>👨🏻‍💻 <span class="company">Google Summer of Code(GSoC),Mozilla</span> — 2020 Developer<br>
+            <span class="work-date">May 2020 – Sept 2020</span> <br>
+            →	Collaborated with Firefox Add-ons team to develop an activity logging extension for Firefox.<br>
+            →	Gathered users’ requirements and formulated user stories.<br>
+            →	Built the project from scratch with reusable Web Components.<br>
+            →	Completed the project having 79% test coverage.<br>
+            →	<strong>Tech stack</strong>: Vanilla JS, Web APIs, Web Extension APIs, Jest, Web Components.
+        </p>
+        <br>
+        <p>👨🏻‍💻 <span class="company">PeoplePerHour.com</span> — Freelance Web Developer<br>
+            <span class="work-date">Mar 2014 – 2018</span> <br>
+            →	Developed web application for remote clients from Europe & North America regions.<br>
+            →	Completed 9 projects with 100% client’s satisfaction.<br>
+            →	<strong>Tech stack</strong>: Wordpress, HTML, CSS, JavaScript, PHP, Bootstrap, JQuery
+    </p>
+
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">>$ cd education</span>
+        </p>
+        <p>👨🏻‍🎓 <strong>Ahsanullah University of Science and Technology(AUST)</strong><br>
+            <span class="work-date">Dhaka,BD</span> <br> 
+            — BSc in Computer Science and Engineering<br>
+       </p>
+       <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">$ cd projects</span>
+        </p>
+        <p>📦 <strong>Extension Activity Monitor</strong>-Monitor activities of other installed extensions in Firefox<br>
+            <span class="work-date">May 2020</span> <br> 
+            → Privileged Firefox extension that uses the privileged “activityLog” API to monitor the activities of the other installed extensions in Firefox.<br>
+            → Written in Vanilla JavaScript from scratch.<br>
+            → Jest is used for unit testing.<br>
+            → Travis and Codecov are used for continuous integration and code test coverage respectively.
+            .</p><br>
+
+            <p>📦 <strong>Legal Aid</strong>-A cross platform application for legal/law support <br> (🏆 Intra-university champion)<br>
+                <span class="work-date">Feb 2019 - 2020</span> <br> 
+                →	Legal/Law support from legal experts, connect & book appointments with lawyers etc.<br>
+                →	Supported the Web and Android platform.<br>
+                →	<strong>Tech stack</strong>: React Native, Redux, Node.js and Firebase.  
+               </p>
+               <br>
+            
+        <p>📦 <strong>Easy Project Management Tool</strong>-A desktop application to manage one’s personal/office projects<br>
+            <span class="work-date">March 2019</span> <br> 
+                → Manage projects by creating projects &  tasks, assigning works to employees, managing deadlines, tracking work progress, adding task dependencies etc.<br>
+                → Developed with Java and JavaFx.<br>
+                → Database configured: MSSQL, MySQL.
+                </p>
+
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">$ cd contact</span>
+        </p>
+        <p>📧 Email: <a href="mailto:ziad07rock@gmail.com">ziad07rock@gmail.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/atiqueahmedziad" target="_blank">atiqueahmedziad</a></p>
+        <p>🔗 Github: <a href="https://github.com/atiqueahmedziad" target="_blank">atiqueahmedziad</a></p>
+        <p>📱 Phone: (+880) 133-029-9700</p>
+
+        <br>
+        <p>
+            <span class="prompt">ziad@portfolio:</span>
+            <span class="path">~</span>
+            <span class="command">$ exit</span>
+        </p>
+        <p class="exit-msg">Session terminated. Connection closed. <span class="blinking">_</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

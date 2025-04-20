@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-color: #1e1e1e;
+    margin: 0;
+    padding: 40px 10px;
+    font-family: 'Courier New', monospace;
+  /* background-color: #1e1e1e;
+  color: #00ff88;
+  scroll-behavior: smooth; */
+  background-color: #0d0d0d;
+  color: #c9d1d9;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+  padding: 40px 10px;
+  }
+
+  
+  
+  .terminal {
+    margin: 40px auto;
+    /* width: 100%; */
+    background-color: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(127, 236, 127);
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  .terminal-header {
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #444;
+    position: relative;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    /* margin-right: 5px; */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    /* display: inline-block; */
+  }
+  
+  .red {
+    background-color: #ff5f56;
+  }
+  .yellow {
+    background-color: #ffbd2e;
+  }
+  .green {
+    background-color: #27c93f;
+  }
+  
+  .terminal-title {
+    margin-left: 32%;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #33ff33;
+    line-height:1.6;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: 90vh;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  
+  .terminal-body {
+    padding: 25px 30px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .prompt {
+    /* color: #00ff88; */
+    color: #39ff14;
+    font-weight: bold;
+  }
+  
+  .path {
+    color: #00bcd4;
+  }
+  
+  .cursor {
+    display: inline-block;
+    background: #33ff33;
+    width: 10px;
+    height:1rem;
+    animation: blink 0.8s infinite;
+    /* color: #00ff88; */
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+
+
+  a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #33ccff;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 8px;
+    margin: 10px 0 20px;
+  }
+  
+  .exit-msg {
+    color: #ff3333;
+    margin-top: 25px;
+  }
+  
+  .blinking {
+    animation: blink 1s step-start infinite;
+  }
+  .command {
+    color: #ffcc00;       
+    font-weight: 600;     
+    font-size: 17px;      
+    font-family: 'Courier New', monospace;
+    animation: fadeInLeft 0.5s ease-in-out;
+  }
+  .work-date{
+    color:#00ffff;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+.company{
+    font-weight: bold;
+    color:tomato
+}
+.login-screen {
+    background-color: #0d1117;
+    color: #00ff88;
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    padding: 100px 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 100px auto;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: fadeIn 2s ease-in-out; */
+  }
+  .login-box {
+    background: #37404e;
+    border: 1px solid #0c6bd9;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .login-line {
+    margin-bottom: 20px;
+  }
+  .prompt{
+    color: #58a6ff;
+  }
+  .login-msg {
+    margin-top: 20px;
+    color: #00e676;
+    font-weight: bold;
+  }
+  .fake-input {
+    background-color: #170d0e;
+    border-radius: 10px;
+    padding: 1px 20px;
+    display: inline-block;
+    min-width: 200px;
+    height: 35px;            
+    font-family: 'Fira Code', monospace;
+    color: #00ff88;
+    white-space: nowrap;     
+    overflow: hidden;       
+    vertical-align: middle;
+  }
+ 
