@@ -159,6 +159,32 @@
     font-weight: bold;
     color:tomato
 }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px 90px; 
+    margin-top: 25px;
+    /* padding-left: 30px; */
+  }
+  
+  .contact-item {
+    font-family: 'Fira Code', monospace;
+    color: #00ff88;
+  }
+  .contact-item a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  .contact-item a:hover{
+    text-decoration: underline;
+  }
+  .no{
+    color: #58a6ff;
+  }
+  .no:hover{
+    text-decoration: underline;
+  }
+  
 .login-screen {
     background-color: #0d1117;
     border-radius: 8px;
