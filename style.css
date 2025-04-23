@@ -5,22 +5,15 @@
   }
   
   body {
-    /* background-color: #1e1e1e;
-    margin: 0;
-    padding: 40px 10px;
-    font-family: 'Courier New', monospace;
-  /* background-color: #1e1e1e;
-  color: #00ff88;
-  scroll-behavior: smooth; */
   background-color: #0d0d0d;
   color: #c9d1d9;
   font-family: 'Fira Code', monospace;
   font-size: 16px;
   line-height: 1.8;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -73,7 +66,7 @@
   }
   
   .terminal-title {
-    margin-left: 32%;
+    margin-left: 30%;
     font-weight: bold;
     margin-right: 20px;
     color: #33ff33;
@@ -115,6 +108,32 @@
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
   }
+  #main-content {
+    display: none;
+    opacity: 0;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .resume-btn {
+    margin-left: auto;
+    background-color: #00e676;
+    color: #0d1117;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #00c96d;
+    text-decoration: underline;
+  }
+  
 
 
   a {
@@ -157,8 +176,13 @@
 
 .company{
     font-weight: bold;
-    color:tomato
+    color:tomato;
 }
+
+.company-heading {
+    font-size: 22px;
+}
+
   .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -236,4 +260,23 @@
     overflow: hidden;       
     vertical-align: middle;
   }
+  .footer-credit {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    color: #888;
+    font-family: monospace;
+  }
+  
+  .footer-credit a {
+    color: #6cf;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-credit a:hover {
+    text-decoration: underline;
+  }
+  
  
