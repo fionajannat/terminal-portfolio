@@ -48,4 +48,6 @@ function showTerminal() {
 
   document.getElementById("main-content").style.display = "block";
   document.getElementById("main-content").style.opacity = 1;
+
+  document.getElementById("footer-credit").style.display = "block";
 }
